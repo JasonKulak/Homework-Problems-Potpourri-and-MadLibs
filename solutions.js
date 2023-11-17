@@ -4,10 +4,14 @@
 //The second argument: vacationing (the boolean true would be passed in as a parameter whenever you are on vacation)
 
 
-function setAlarm() {
-
-}
-
+function setAlarm(employed, vacationing){
+    if (employed === true && vacationing === false){
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}   
+setAlarm(true, true)
 
 //setAlarm(true, true) // => returns false
 //setAlarm(false, false) // => returns false
