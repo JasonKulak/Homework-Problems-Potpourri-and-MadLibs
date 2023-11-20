@@ -25,13 +25,13 @@
 ///////////////////
 //COME BACK TO THIS?
 
-function oddNumberCount(num) {
-for (let i = 0; i <= num.length; i++){
-    if (i % 2 !==0)
+// function oddNumberCount(num) {
+// for (let i = 0; i <= num.length; i++){
+//     if (i % 2 !==0)
     
-    }
-}
-oddNumberCount(10)
+//     }
+// }
+// oddNumberCount(10)
 
 //////////////////////
 //Disemvoweling Trolls
@@ -52,12 +52,17 @@ oddNumberCount(10)
 //Include these keys: savings, checking, moneyMarket, creditCard
 //Write a function called bankAccountSummary that accepts your bankInfo object as an argument
 
-// function bankAccountSummary('savings + checking + moneyMarket + creditCard') {
-//     const bankInfo = {
-//         savings: 100
-//         checking: 200
-//         moneyMarket: 500
-//         creditCard: 1000
-//     }
-// }
-// backAccountSummary(bankInfo)
+const bankInfo = {
+    savings: 100,
+    checking: 200,
+    moneyMarket: 500,
+    creditCard: 1000,
+}
+let sum = 0
+function bankAccountSummary() {
+    for (let balances in bankInfo) {
+        sum += bankInfo[balances]
+    }
+    return sum
+}
+console.log(bankAccountSummary())
