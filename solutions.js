@@ -24,11 +24,11 @@
 //Count Odd Numbers
 ///////////////////
 //COME BACK TO THIS?
-function oddNumberCount(number){
-for (let i = 0; i <= number; i++) {
-    if (i % 2 != 0) {
-        console.log(i)
-         }
+
+function oddNumberCount(num) {
+for (let i = 0; i <= num.length; i++){
+    if (i % 2 !==0)
+    
     }
 }
 oddNumberCount(10)
@@ -36,3 +36,28 @@ oddNumberCount(10)
 //////////////////////
 //Disemvoweling Trolls
 //////////////////////
+//Write a function that returns a string with no vowels
+// function trollsBeGone() {
+//     const Bilbo = "I'll turn you all into stone!"
+//     const noVowels = Bilbo.replace(/[aeiou]/gi, '');
+//     console.log(noVowels)
+// }
+// trollsBeGone()
+
+
+//////////////////////
+//Bank Account Summary
+//////////////////////
+//Make an object named bankInfo
+//Include these keys: savings, checking, moneyMarket, creditCard
+//Write a function called bankAccountSummary that accepts your bankInfo object as an argument
+
+// function bankAccountSummary('savings + checking + moneyMarket + creditCard') {
+//     const bankInfo = {
+//         savings: 100
+//         checking: 200
+//         moneyMarket: 500
+//         creditCard: 1000
+//     }
+// }
+// backAccountSummary(bankInfo)
