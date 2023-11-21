@@ -66,3 +66,15 @@ function bankAccountSummary() {
     return sum
 }
 console.log(bankAccountSummary())
+
+const bankTotal = sum;
+
+function inTheRed(sum) {
+    if (sum < 0) {
+        result = 'True';
+    } else {
+        result = 'False';
+    }
+    return result;
+}
+console.log(inTheRed(bankTotal))
