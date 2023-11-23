@@ -40,7 +40,7 @@ console.log(oddNumberCount(7))
 //////////////////////
 //Disemvoweling Trolls
 //////////////////////
-Write a function that returns a string with no vowels
+//Write a function that returns a string with no vowels
 function trollsBeGone() {
     const Bilbo = "I'll turn you all into stone!"
     const noVowels = Bilbo.replace(/[aeiou]/gi, '');
