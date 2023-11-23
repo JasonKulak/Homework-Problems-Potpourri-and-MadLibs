@@ -2,7 +2,7 @@
 //The keys: number, adjective, plural noun (pluralNoun), adverb, another adjective (anotherAdjective)
 
 
-let words = {
+const words = {
     number: "",
     adjective: "",
     pluralNoun: "",
@@ -11,12 +11,28 @@ let words = {
 }
 console.log(words)
 
-const player = {
+// const player = {
 
-}
+// }
+// for (let i = 0; i < words.length; i++){
+
+// }
+
+
 
 function startMadlib() {
-    const number = prompt("Give me a number");
-    return words.number;
+    words.number = prompt("Give me a number");
+    words.adjective = prompt("Give me an adjective");
+    words.pluralNoun = prompt("Give me a plural noun");
+    words.adverb = prompt("Give me an adverb");
+    words.anotherAdjective = prompt("give me another adjective");
+
+    alert(`Once upon a time a group of ${words.number} General Assembly graduates
+got together and made a startup called ${words.adjective} Technologies.
+Their goal was to create smart ${words.pluralNoun}.
+They approached the challenge ${words.adverb}
+which ultimately lead them to ${words.anotherAdjective} fame.
+`);
 }
-console.log(startMadlib())
+startMadlib();
+
