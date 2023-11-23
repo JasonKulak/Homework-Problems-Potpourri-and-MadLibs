@@ -11,15 +11,6 @@ const words = {
 }
 console.log(words)
 
-// const player = {
-
-// }
-// for (let i = 0; i < words.length; i++){
-
-// }
-
-
-
 function startMadlib() {
     words.number = prompt("Give me a number");
     words.adjective = prompt("Give me an adjective");
